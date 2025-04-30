@@ -1,0 +1,10 @@
+stripe
+numpy
+pandas
+sqlalchemy
+pymysql
+django
+djangorestframework
+django-cors-headers
+pymysql
+cryptography

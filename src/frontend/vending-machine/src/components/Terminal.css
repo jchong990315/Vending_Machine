@@ -1,0 +1,198 @@
+/* outer frame styling */
+.terminal-frame {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+/* top bar of our terminal */
+.terminal-titlebar {
+  background-color: #333;
+  border-radius: 6px 6px 0 0;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* The left cluster of buttons */
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+/* Each button is a small circle */
+.button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+/* mock mac style */
+.close {
+  background-color: #ff5f56;
+}
+.minimize {
+  background-color: #ffbd2e;
+}
+.maximize {
+  background-color: #27c93f;
+}
+
+/* "Terminal" label  */
+.title {
+  color: #ccc;
+  font-size: 0.9rem;
+  flex: 1; 
+  text-align: center;
+}
+
+/* The main screen */
+.terminal-container {
+  background-color: #000;          
+  color: #fff;                     
+  font-family: "Courier New", monospace;
+  width: 60vw;
+  max-width: 800px;
+  height: 60vh;
+  max-height: 600px;
+  padding: 1rem;
+  border-radius: 0 0 6px 6px;      
+  border: 2px solid #f00;          
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); 
+  overflow-y: auto;
+}
+
+/* Each line in the terminal history */
+.terminal-line {
+  margin: 0.2rem 0;
+  white-space: pre-wrap;
+}
+
+/* The input line (prompt + input) */
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+/* The prompt text (e.g. "T17-Vend:~$") */
+.prompt {
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+/* The user input */
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  caret-color: #fff; 
+}
+
+/* cursor */
+.blinking-cursor {
+  caret-color: transparent;
+  border-left: 2px solid #f00;
+  animation: blink 1s steps(1) infinite;
+}
+
+.terminal-titlebar {
+  background-color: #333;
+  border-radius: 6px 6px 0 0;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space out items */
+  padding: 0 1rem;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-button {
+  background: #333;
+  color: #ccc;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  min-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  z-index: 1;
+}
+/*to show on hower*/
+.dropdown-container:hover .dropdown-content { 
+  display: block;
+}
+.dropdown-header {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.transactions-header {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.transaction-list li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.no-transactions {
+  padding: 0.5rem 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+.total-spent {
+  text-align: center;   
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+
+/* Keyframes for blinking effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,9 @@
+.DS_Store
+*.zip
+venv/
+__pycache__/
+*.pyc
+*.pyo
+config
+database.txt
+db.sqlite3

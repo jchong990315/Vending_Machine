@@ -1,9 +1,5 @@
 # Specification Document
 
-## TeamName
-
-TABLE17 VENDING COMPANY
-
 ### Project Abstract
 
 The vending machine CLI will to allow users to purchase snacks straight from the command line. We will keep track of inventory, allow users to purchase inventory, and accept credit card payments using the [Stripe API](https://docs.stripe.com/). Stretch goals include integrating hardware such as Arduino boards and motors to create an authentic vending machine replica.
